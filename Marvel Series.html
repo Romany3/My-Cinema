@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>My Cinema</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="series.css">
+    <link rel="icon" href="OIP.jpeg" alt="Website logo">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">My Cinema</a>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search Series">
+            <button onclick="searchSeries()">Search</button>
+            <button onclick="resetSearch()">Reset</button>
+        </div>
+    </header>
+    <section class="card">
+        <div class="container">
+            <h2 class="title">Marvel-Series</h2>
+            <div id="series-list">
+                <!-- Series Items -->
+                <section class="part">
+                    <div class="series-item" onclick="showSeriesDetails('series1')">
+                        <img src="Marvel Studio/Series/Loki/Loki.jpeg" alt="Loki">
+                        <p>Loki</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="series-item" onclick="showSeriesDetails('series2')">
+                        <img src="Marvel Studio/Series/I AM GROOT/I Am Groot.jpeg" alt="I Am Groot">
+                        <p>I Am Groot</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="series-item" onclick="showSeriesDetails('series3')">
+                        <img src="Marvel Studio/Series/Moon Knight/Moon Knight.jpeg" alt="Moon Knight">
+                        <p>Moon Knight</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="series-item" onclick="showSeriesDetails('series4')">
+                        <img src="Marvel Studio/Series/The Punisher/The Punisher.jpeg" alt="The Punisher">
+                        <p>The Punisher</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="series-item" onclick="showSeriesDetails('series5')">
+                        <img src="Marvel Studio/Series/WandaVision/WandaVision.jpeg" alt="WandaVision">
+                        <p>WandaVision</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="series-item" onclick="showSeriesDetails('series6')">
+                        <img src="Marvel Studio/Series/She-Hulk - Attorney at Law/She-Hulk - Attorney at Law.jpeg" alt="She-Hulk - Attorney at Law">
+                        <p>She-Hulk - Attorney at Law</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="series-item" onclick="showSeriesDetails('series7')">
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="series-item" onclick="showSeriesDetails('series8')">
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                </section>
+                <!-- Add more series items here -->
+            </div>
+            <div id="seasons-list" style="display: none;">
+                <h2 id="series-title"></h2>
+                <p id="series-description"></p>
+                <ul id="season-list"></ul>
+                <button onclick="goBackToSeries()">Back</button>
+            </div>
+            <div id="episodes-list" style="display: none;">
+                <h2 id="season-title"></h2>
+                <ul id="episode-list"></ul>
+                <button onclick="goBackToSeasons()">Back</button>
+            </div>
+            <div id="series-details" style="display: none;">
+                <h2 id="episode-title"></h2>
+                <video id="series-video" width="600" controls>
+                    <source id="series-video-source" src="" type="video/mp4">
+                </video>
+                <button onclick="goBackToEpisodes()">Back</button>
+            </div>
+        </div>
+        <script src="Marvel Series.js"></script>
+    </section>
+</body>
+</html>

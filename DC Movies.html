@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>My Cinema</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="Movies.css">
+    <link rel="icon" href="OIP.jpeg" alt="Website logo">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">My Cinema</a>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search Movies">
+            <button onclick="searchMovies()">Search</button>
+            <button onclick="resetSearch()">Reset</button>
+        </div>
+    </header>
+    <section class="card">
+            <h2 class="title">DC-Movies</h2>
+            <div id="movie-list">
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie1')">
+                    <img src="DC/Movies/The Flash Movie/The Flash.jpeg" alt="The Flash">
+                    <p>The Flash</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie2')">
+                    <img src="DC/Movies/Justice.League~/Justice League 1.jpeg" alt="Justice League 1">
+                    <p>Justice League 1</p>
+                </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie3')">
+                        <img src="DC/Movies/Justice.League~/Justice League 2.jpeg" alt="Justice League 2">
+                        <p>Justice League 2</p>
+                    </div>
+                </section>
+                <section class="part">
+                   <div class="movie-item" onclick="showMovieDetails('movie4')">
+                        <img src="DC/Movies/Aquaman/Aquaman 1.jpg" alt="Aquaman 1">
+                        <p>Aquaman 1</p>
+                   </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie5')">
+                         <img src="DC/Movies/Aquaman/Aquaman 2.jpeg" alt="Aquaman 2">
+                         <p>Aquaman 2</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie6')">
+                         <img src="https://data.terabox.com/thumbnail/5a36fb7bdae9c56f0433cf18419d1084?fid=4401146076298-250528-235833340945598&time=1718251200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-glcP9in31bgKEUKNlGuOO81%2Bico%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=357048495192322265&dp-callid=0&size=c360_u270&quality=100&vuk=-&ft=video" alt="Batman v Superman Dawn of Justice">
+                         <p>Batman v Superman Dawn of Justice</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie7')">
+                         <img src="" alt="">
+                         <p></p>
+                    </div>
+                 </section>
+            </div>
+            <div id="movie-details" style="display: none;">
+                <h2 id="movie-title"></h2>
+                <p id="movie-description"></p>
+                <video id="movie-video" width="600" controls>
+                    <source id="movie-video-source" src="" type="video/mp4">
+                </video>
+                <button onclick="goBack()">Back</button>
+            </div>
+        <script src="DC Movies.js"></script>
+    </section>
+</body>
+</html>

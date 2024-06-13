@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>My Cinema</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="series.css">
+    <link rel="icon" href="OIP.jpeg" alt="Website logo">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">My Cinema</a>
+    </header>
+    <section class="card">
+        <div class="container">
+            <h2 class="title">The Walking Dead Series</h2>
+            <div id="series-list">
+                <!-- Series Items -->
+                <section class="part">
+                    <div class="series-item" onclick="showSeriesDetails('series1')">
+                        <img src="Series/The Walking Dead Series/The Walking Dead/The walking dead.jpeg" alt="The Walking Dead">
+                        <p>The Walking Dead</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="series-item" onclick="showSeriesDetails('series2')">
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="series-item" onclick="showSeriesDetails('series3')">
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="series-item" onclick="showSeriesDetails('series4')">
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="series-item" onclick="showSeriesDetails('series5')">
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                </section>
+            </div>
+            <div id="seasons-list" style="display: none;">
+                <h2 id="series-title"></h2>
+                <p id="series-description"></p>
+                <ul id="season-list"></ul>
+                <button onclick="goBackToSeries()">Back</button>
+            </div>
+            <div id="episodes-list" style="display: none;">
+                <h2 id="season-title"></h2>
+                <ul id="episode-list"></ul>
+                <button onclick="goBackToSeasons()">Back</button>
+            </div>
+            <div id="series-details" style="display: none;">
+                <h2 id="episode-title"></h2>
+                <video id="series-video" width="600" controls>
+                    <source id="series-video-source" src="" type="video/mp4">
+                </video>
+                <button onclick="goBackToEpisodes()">Back</button>
+            </div>
+        </div>
+        <script src="The Walking Dead Series.js"></script>
+    </section>
+</body>
+</html>

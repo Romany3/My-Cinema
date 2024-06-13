@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>My Cinema</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="Movies.css">
+    <link rel="icon" href="OIP.jpeg" alt="Website logo">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">My Cinema</a>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search Movies">
+            <button onclick="searchMovies()">Search</button>
+            <button onclick="resetSearch()">Reset</button>
+        </div>
+    </header>
+    <section class="card">
+            <h2 class="title">Movies</h2>
+            <div id="movie-list">
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie1')">
+                    <img src="Movies/Complete/57 Seconds/57 seconds.jpeg" alt="57 seconds">
+                    <p>57 seconds</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie2')">
+                    <img src="Movies/Complete/All.The.Bright.Places/All the bright places.jpeg" alt="All The Bright places">
+                    <p>All The Bright Places</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie3')">
+                    <img src="Movies/Complete/ABCD/ABCD.jpeg" alt="ABCD">
+                    <p>ABCD</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie4')">
+                    <img src="Movies/Complete/American Assassin/American Assassin.jpeg" alt="American Assassin">
+                    <p>Amirican Assassin</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie5')">
+                    <img src="Movies/Complete/Baby.Driver/Baby driver.jpeg" alt="Baby Driver">
+                    <p>Baby Driver</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie6')">
+                    <img src="Movies/Complete/Brothers~/Brothers.jpeg" alt="Brothers">
+                    <p>Brothers</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie7')">
+                    <img src="Movies/Complete/Chak De! India/Chak de india.jpeg" alt="Chak De India">
+                    <p>Chack De India</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie8')">
+                    <img src="Movies/Complete/Dont.Knock.Twic~/don't knock twice.jpeg" alt="Don't Knock Twice">
+                    <p>Don't Knock Twice</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie10')">
+                    <img src="Movies/Complete/El.Camino.A.Breaking.Bad~/el camino a breaking bad.jpeg" alt="Code 8-Part 2">
+                    <p>El Camino</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie9')">
+                    <img src="Movies/Complete/Brotherss~/Brothers.jpeg" alt="Brothers">
+                    <p>Brothers</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie11')">
+                    <img src="Movies/Complete/Death note~/Death note.jpeg" alt="Death note">
+                    <p>Death Note</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie12')">
+                    <img src="Movies/Complete/Detachment/Detachment.jpeg" alt="Detachment">
+                    <p>Detachment</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie13')">
+                    <img src="Movies/Complete/divergent/divergent.jpeg" alt="divergent">
+                    <p>divergent</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie14')">
+                    <img src="Movies/Complete/divergent/Allegiant.jpeg" alt="Allegiant">
+                    <p>Allegiant</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie15')">
+                    <img src="Movies/Complete/divergent/insurgent.jpeg" alt="Insurgent">
+                    <p>Insurgent</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie16')">
+                    <img src="Movies/Complete/Edge.Of.Tomorrow~/Edge of tomorrow.jpeg" alt="Edge of Tomorrow">
+                    <p>Edge Of Tomorrow</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie17')">
+                    <img src="Movies/Complete/Every.Day~/Everyday.jpeg" alt="EveryDay">
+                    <p>EveryDay</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie18')">
+                    <img src="Movies/Complete/Fantastic.Four~/Fantastic four 2005.jpeg" alt="Fantastic Four 2005">
+                    <p>Fantastic Four 2005</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie19')">
+                    <img src="Movies/Complete/Fantastic.Four~/Fantastic four 2015.jpeg" alt="Fantastic Four 2015">
+                    <p>Fantastic Four 2015</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie20')">
+                    <img src="Movies/Complete/Fast & Furious~/Fast and furious 1.jpeg" alt="fast and furious 1">
+                    <p>fast and furious 1</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie21')">
+                    <img src="Movies/Complete/Fast & Furious~/Fast and furious 2.jpeg" alt="fast and furious 2">
+                    <p>fast and furious 2</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie22')">
+                    <img src="Movies/Complete/Fast & Furious~/Fast and furious 3.jpeg" alt="fast and furious 3">
+                    <p>fast and furious 3</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie23')">
+                    <img src="Movies/Complete/Fast & Furious~/Fast and furious 4.jpeg" alt="fast and furious 4">
+                    <p>fast and furious 4</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie24')">
+                    <img src="Movies/Complete/Fast & Furious~/Fast and furious 5.jpeg" alt="fast and furious 5">
+                    <p>fast and furious 5</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie25')">
+                    <img src="Movies/Complete/Fast & Furious~/Fast and furious 6.jpeg" alt="fast and furious 6">
+                    <p>fast and furious 6</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie26')">
+                    <img src="Movies/Complete/Fast & Furious~/Fast and furious 7.jpeg" alt="fast and furious 7">
+                    <p>fast and furious 7</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie27')">
+                    <img src="Movies/Complete/Fast & Furious~/Fast and furious 8.jpeg" alt="fast and furious 8">
+                    <p>fast and furious 8</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie28')">
+                    <img src="Movies/Complete/Fast & Furious~/fast and furious 9 part 1.jpeg" alt="fast and furious 9">
+                    <p>fast and furious 9 part 1</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie29')">
+                    <img src="Movies/Complete/Fast & Furious~/fast and furious 9 part 2.jpeg" alt="fast and furious 9">
+                    <p>fast and furious 9 part 2</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie30')">
+                    <img src="Movies/Complete/Fast & Furious~/fast and furious 10.jpeg" alt="fast and furious 10">
+                    <p>Fast x</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie31')">
+                    <img src="Movies/Complete/Freaks.Youre.One.of.Us/Freaks Youre One of Us.jpeg" alt="Freaks Youre One of Us">
+                    <p>Freaks Youre One of Us</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie32')">
+                    <img src="Movies/Complete/Hacksaw.Ridge~/Hacksaw Ridge.jpeg" alt="Hacksaw Ridge">
+                    <p>Hacksaw Ridge</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie33')">
+                    <img src="Movies/Complete/Happy.New.Year~/Happy New Year.jpeg" alt="Happy New Year">
+                    <p>Happy New Year</p>
+                </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie34')">
+                        <img src="Movies/Complete/Home Alone~/Home Alone 1.jpeg" alt="Home Alone One">
+                        <p>Home Alone One</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie35')">
+                        <img src="Movies/Complete/Home Alone~/Home Alone 2.jpeg" alt="Home Alone Two">
+                        <p>Home Alone Two</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie36')">
+                        <img src="Movies/Complete/In.Time~/In Time.jpeg" alt="In Time">
+                        <p>In Time</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie37')">
+                        <img src="Movies/Complete/Infinite/Infinite.jpeg" alt="Infinite">
+                        <p>Infinite</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie38')">
+                        <img src="Movies/Complete/Interstellar~/Interstellar.jpeg" alt="Interstellar">
+                        <p>Interstellar</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie39')">
+                        <img src="Movies/Complete/it~/IT 1.jpeg" alt="IT Part One">
+                        <p>IT Part One</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie40')">
+                        <img src="Movies/Complete/it~/IT 2.jpeg" alt="IT Part Two">
+                        <p>IT Part Two</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie41')">
+                        <img src="Movies/Complete/John wick~/John Wick 1.jpeg" alt="John Wick Chapter 1">
+                        <p>John Wick Chapter 1</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie42')">
+                        <img src="Movies/Complete/John wick~/John Wick 2.jpeg" alt="John Wick Chapter 2">
+                        <p>John Wick Chapter 2</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie43')">
+                        <img src="Movies/Complete/John wick~/John Wick 3.jpeg" alt="John Wick Chapter 3">
+                        <p>John Wick Chapter 3</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie44')">
+                        <img src="Movies/Complete/John wick~/John Wick 4.jpeg" alt="John Wick Chapter 4">
+                        <p>John Wick Chapter 4</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie45')">
+                        <img src="Movies/Complete/Limitless~/Limitless.jpeg" alt="Limitless">
+                        <p>Limitless</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie46')">
+                        <img src="Movies/Complete/now.you.see.me~/Now You See Me 1.jpeg" alt="Now You Can See ME 1">
+                        <p>Now You Can See ME 1</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie47')">
+                        <img src="Movies/Complete/now.you.see.me~/Now You See Me 2.jpeg" alt="Now You Can See ME 2">
+                        <p>Now You Can See ME 2</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie48')">
+                        <img src="Movies/Complete/Pyaar.Impossible~/Pyaar Imposible.jpeg" alt="Pyaar Imposible">
+                        <p>Pyaar Imposible</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie49')">
+                        <img src="Movies/Complete/Ra.One~/Ra One.jpeg" alt="Ra One">
+                        <p>Ra One</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie50')">
+                        <img src="Movies/Complete/Rab.Ne.Bana.Di.Jodi/Rab.Ne.Bana.Di.Jodi.jpeg" alt="Rab Ne Bana Di Jodi">
+                        <p>Rab Ne Bana Di Jodi</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie51')">
+                        <img src="Movies/Complete/Rampage~/rampage.jpeg" alt="Rampage">
+                        <p>Rampage</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie52')">
+                        <img src="Movies/Complete/Ready player one~/ready player one.jpeg" alt="Ready Player One">
+                        <p>Ready Player One</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie53')">
+                        <img src="Movies/Complete/Samaritan~/sumaritan.jpeg" alt="Samaritan">
+                        <p>Samaritan</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie54')">
+                        <img src="Movies/Complete/sonic~/Sonic 2.jpeg" alt="sonic 2">
+                        <p>sonic 2</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie55')">
+                        <img src="Movies/Complete/Source.Code~/Source code.jpeg" alt="Source code">
+                        <p>Source code</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie56')">
+                        <img src="Movies/Complete/Space Sweepers~/space sweeper.jpeg" alt="Space Sweepers">
+                        <p>Space Sweepers</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie57')">
+                        <img src="Movies/Complete/Street.Dancer.3D~/street dancer 3d.jpeg" alt="Street Dancer 3D">
+                        <p>Street Dancer 3D</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie58')">
+                        <img src="Movies/Complete/Student.Of.The.Year~/Student of the Year.jpeg" alt="Student Of The Year">
+                        <p>Student Of The Year</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie59')">
+                        <img src="Movies/Complete/Teen wolf, the movie~/Teen wolf.jpeg" alt="Teen Wolf">
+                        <p>Teen Wolf</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie60')">
+                        <img src="Movies/Complete/Teenage.Mutant.Ninja.Turtles~/teenage mutant ninja turtle 1.jpeg" alt="Teenage Mutant Ninja Turtles">
+                        <p>Teenage Mutant Ninja Turtles 1</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie61')">
+                        <img src="Movies/Complete/Teenage.Mutant.Ninja.Turtles~/teenage mutant ninja turtle 2.jpeg" alt="Teenage Mutant Ninja Turtles 2">
+                        <p>Teenage Mutant Ninja Turtles 2</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie62')">
+                        <img src="Movies/Complete/The Babysitter~/the babysitter.jpeg" alt="The BabySitter">
+                        <p>The BabySitter</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie63')">
+                        <img src="Movies/Complete/The Intouchables/the intouchables.jpeg" alt="The Intouchables">
+                        <p>The Intouchables</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie64')">
+                        <img src="Movies/Complete/The kissing booth/the kissing booth 1.jpeg" alt="The Kissing Booth 1">
+                        <p>The Kissing Booth 1</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie65')">
+                        <img src="Movies/Complete/The kissing booth/the kissing booth 2.jpeg" alt="The Kissing Booth 2">
+                        <p>The Kissing Booth 2</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie66')">
+                        <img src="Movies/Complete/The kissing booth/the kissing booth 3.jpeg" alt="The Kissing Booth 3">
+                        <p>The Kissing Booth 3</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie67')">
+                        <img src="Movies/Complete/The Fault In Our Stars/The Fault In Our Stars.jpeg" alt="The Fault In Our Stars">
+                        <p>The Fault In Our Stars</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie68')">
+                        <img src="Movies/Complete/The.Karate.Kid~/the karate kid.jpeg" alt="The Karate Kid">
+                        <p>The Karate Kid</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie69')">
+                        <img src="Movies/Complete/The.Maze.Runner~/The maze runner 1.jpeg" alt="The Maze Runner 1">
+                        <p>The Maze Runner 1</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie70')">
+                        <img src="Movies/Complete/The.Maze.Runner~/The maze runner 2.jpeg" alt="The Maze Runner 2">
+                        <p>The Maze Runner 2</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie71')">
+                        <img src="Movies/Complete/The.Maze.Runner~/The maze runner 3.jpeg" alt="The Maze Runner 3">
+                        <p>The Maze Runner 3</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie72')">
+                        <img src="Movies/Complete/The Pursuit Of Happyness/The.Pursuit.Of.Happyness.jpeg" alt="The Pursuit Of Happyness">
+                        <p>The Pursuit Of Happyness</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie73')">
+                        <img src="Movies/Complete/The.Social.Network/The Social Network.jpeg" alt="The Social Network">
+                        <p>The Social Network</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie74')">
+                        <img src="Movies/Complete/Time.Loop~/Time Loop.jpeg" alt="Time Loop">
+                        <p>Time Loop</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie75')">
+                        <img src="Movies/Complete/xXx~/xXx.jpeg" alt="xXx">
+                        <p>xXx</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie76')">
+                        <img src="Movies/Complete/The Anomaly/The Anomaly.jpeg" alt="The Anomaly">
+                        <p>The Anomaly</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie77')">
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                </section>
+            </div>
+            <div id="movie-details" style="display: none;">
+                <h2 id="movie-title"></h2>
+                <p id="movie-description"></p>
+                <video id="movie-video" width="600" controls>
+                    <source id="movie-video-source" src="" type="video/mp4">
+                </video>
+                <button onclick="goBack()">Back</button>
+            </div>
+        <script src="movies.js"></script>
+    </section>
+</body>
+</html>

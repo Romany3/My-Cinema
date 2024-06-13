@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: gray;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: first baseline;
+    align-items: left;
+    padding: 10px 100px;
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+body {
+    background-color: rgb(120, 118, 118);
+}
+
+section{
+    padding: 100px 100px 100px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.part {
+    background-color: rgb(149, 146, 146);
+    width: 13em;
+    height: 21.51em;
+    box-shadow: 0 5px 25px rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 2px;
+    transition: 0.7s ease;
+}
+
+.part:hover{
+    transform: scale(1.1);
+}
+
+section p {
+    color: black;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#series-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.series-item {
+    text-align: center; /* Center the text */
+}
+
+.series-item img {
+    width: 150px;
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.series-item p {
+    margin: 5px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+#seasons-list, #episodes-list, #series-details {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#series-title, #season-title, #episode-title {
+    font-size: 24px;
+    color: #333;
+}
+
+#episode-description {
+    color: #666;
+}
+
+video {
+    margin-top: 20px;
+}
+
+button {
+    color: black;
+    background-color: rgb(120, 119, 119);
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(107, 105, 105);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: justify;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.1s ease;
+}
+
+li:hover {
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(75, 73, 73);
+}
+
+.search-bar {
+    margin-left: auto;
+}
+
+.search-bar input {
+    padding: 1px 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 5px 5px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 1px 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 1px px 1px 1px;
+    color: white;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #a8a5a5;
+}

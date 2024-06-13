@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>My Cinema</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="series.css">
+    <link rel="icon" href="OIP.jpeg" alt="Website logo">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">My Cinema</a>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search Series">
+            <button onclick="searchSeries()">Search</button>
+            <button onclick="resetSearch()">Reset</button>
+        </div>
+    </header>
+    <section class="cards">
+        <div class="container">
+            <h2 class="title">Series</h2>
+            <div id="series-list">
+                <!-- Series Items -->
+                <section class="part">
+                    <div class="series-item" onclick="showMovieDetails('series1')">
+                        <img src="Series/complete/Better Call Saul~/Better Call Saul.jpeg" alt="Better Call Saul">
+                        <p>Better Call Saul</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="series-item" onclick="showMovieDetails('series2')">
+                        <img src="Series/complete/Dark/Dark.jpg" alt="Dark">
+                        <p>Dark</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="series-item" onclick="showMovieDetails('series3')">
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                </section>
+                <!-- Add more series items here -->
+            </div>
+            <div id="seasons-list" style="display: none;">
+                <h2 id="series-title"></h2>
+                <p id="series-description"></p>
+                <ul id="season-list"></ul>
+                <button onclick="goBackToSeries()">Back</button>
+            </div>
+            <div id="episodes-list" style="display: none;">
+                <h2 id="season-title"></h2>
+                <ul id="episode-list"></ul>
+                <button onclick="goBackToSeasons()">Back</button>
+            </div>
+            <div id="series-details" style="display: none;">
+                <h2 id="episode-title"></h2>
+                <video id="series-video" width="600" controls>
+                    <source id="series-video-source" src="" type="video/mp4">
+                </video>
+                <button onclick="goBackToEpisodes()">Back</button>
+            </div>
+        </div>
+        <script src="Another Series.js"></script>
+    </section>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>My Cinema</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="Movies.css">
+    <link rel="icon" href="OIP.jpeg" alt="Website logo">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">My Cinema</a>
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder="Search Movies">
+          <button onclick="searchMovies()">Search</button>
+          <button onclick="resetSearch()">Reset</button>
+      </div>
+    </header>
+    <section class="card">
+            <h2 class="title">Marvel-Movies</h2>
+            <div id="movie-list">
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie1')">
+                    <img src="Marvel Studio/Movies/Ant man/Ant Man 1.jpeg" alt="Ant Man 1">
+                    <p>Ant Man 1</p>
+                </div>
+                </section>
+                <section class="part">
+                <div class="movie-item" onclick="showMovieDetails('movie2')">
+                    <img src="Marvel Studio/Movies/Ant man/Ant Man 2.jpeg" alt="Ant Man 2">
+                    <p>Ant Man 2</p>
+                </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie3')">
+                        <img src="Marvel Studio/Movies/Ant man/Ant Man 3.jpeg" alt="Ant Man 3">
+                        <p>Ant Man 3</p>
+                    </div>
+                </section>
+                <section class="part">
+                   <div class="movie-item" onclick="showMovieDetails('movie4')">
+                        <img src="Marvel Studio/Movies/Black Widow/Black Widow.jpeg" alt="Black Widow">
+                        <p>Black Widow</p>
+                   </div>
+                </section>
+                <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie5')">
+                         <img src="Marvel Studio/Movies/Capitn Amarica/Captain America 1.jpeg" alt="Captain America 1">
+                         <p>Captain America 1</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie6')">
+                         <img src="Marvel Studio/Movies/Capitn Amarica/Captain America 2.jpeg" alt="Captain America 2">
+                         <p>Captain America 2</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie7')">
+                         <img src="Marvel Studio/Movies/Capitn Amarica/Captain America 3.jpeg" alt="Captain America 3">
+                         <p>Captain America 3</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie8')">
+                         <img src="Marvel Studio/Movies/Captin Marvel/Captain Marvel.jpeg" alt="Captain Marvel">
+                         <p>Captain Marvel</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie9')">
+                         <img src="Marvel Studio/Movies/The Marvels/The Marvels.jpeg" alt="The Marvels">
+                         <p>The Marvels</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie10')">
+                         <img src="Marvel Studio/Movies/deadpool/Deadpool 1.jpeg" alt="Deadpool 1">
+                         <p>Deadpool 1</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie11')">
+                         <img src="Marvel Studio/Movies/deadpool/Deadpool 2.jpeg" alt="Deadpool 2">
+                         <p>Deadpool 2</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie12')">
+                         <img src="Marvel Studio/Movies/Doctor Strange/Doctor Strange 1.jpeg" alt="Doctor Strange 1">
+                         <p>Doctor Strange 1</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie13')">
+                         <img src="Marvel Studio/Movies/Doctor Strange/Doctor Strange 2.jpeg" alt="Doctor Strange 2">
+                         <p>Doctor Strange 2</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie14')">
+                         <img src="Marvel Studio/Movies/Eternals/Eternals.jpeg" alt="Eternals">
+                         <p>Eternals</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie15')">
+                         <img src="Marvel Studio/Movies/Guardians of the Galaxy/Guardians of the Galaxy 1.jpeg" alt="Guardians of the Galaxy 1">
+                         <p>Guardians of the Galaxy 1</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie16')">
+                         <img src="Marvel Studio/Movies/Guardians of the Galaxy/Guardians of the Galaxy 2.jpeg" alt="Guardians of the Galaxy 2">
+                         <p>Guardians of the Galaxy 2</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie17')">
+                         <img src="Marvel Studio/Movies/Guardians of the Galaxy/Guardians of the Galaxy 3.jpeg" alt="Guardians of the Galaxy 3">
+                         <p>Guardians of the Galaxy 3</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie18')">
+                         <img src="Marvel Studio/Movies/Guardians of the Galaxy/Guardians of the Galaxy holiday.jpeg" alt="Guardians of the Galaxy Holiday">
+                         <p>Guardians of the Galaxy Holiday</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie19')">
+                         <img src="Marvel Studio/Movies/Iron man/Iron Man 1.jpeg" alt="Iron Man 1">
+                         <p>Iron Man 1</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie20')">
+                         <img src="Marvel Studio/Movies/Iron man/Iron Man 2.jpeg" alt="Iron Man 2">
+                         <p>Iron Man 2</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie21')">
+                         <img src="Marvel Studio/Movies/Iron man/Iron Man 3.jpeg" alt="Iron Man 3">
+                         <p>Iron Man 3</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie22')">
+                         <img src="Marvel Studio/Movies/Shang Chi And The Legend Of The Ten Rings/Shang.Chi.And.The.Legend.Of.The.Ten.Rings.jpeg" alt="Shang Chi And The Legend Of The Ten Rings">
+                         <p>Shang Chi And The Legend Of The Ten Rings</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie23')">
+                         <img src="Marvel Studio/Movies/Spider man 1/Spiderman 1.jpeg" alt="Spider Man 1">
+                         <p>Spider Man 1</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie24')">
+                         <img src="Marvel Studio/Movies/Spider man 1/Spiderman 2.jpeg" alt="Spider Man 2">
+                         <p>Spider Man 2</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie25')">
+                         <img src="Marvel Studio/Movies/Spider man 1/Spiderman 3.jpeg" alt="Spider Man 3">
+                         <p>Spider Man 3</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie26')">
+                         <img src="Marvel Studio/Movies/Spider Man 2/the amazing spiderman 1.jpeg" alt="The Amazing Spider Man 1">
+                         <p> 1The Amazing Spider Man</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie27')">
+                         <img src="Marvel Studio/Movies/Spider Man 2/the amazing spiderman 2.jpeg" alt="The Amazing Spider Man 2">
+                         <p>The Amazing Spider Man 2</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie28')">
+                         <img src="Marvel Studio/Movies/Spider Man 3/spider man homecoming.jpeg" alt="Spider Man :Homecoming">
+                         <p>Spider Man :Homecoming</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie29')">
+                         <img src="Marvel Studio/Movies/Spider Man 3/spider man far from home.jpeg" alt="Spider Man :Far From Home">
+                         <p>Spider Man :Far From Home</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie30')">
+                         <img src="Marvel Studio/Movies/Spider Man 3/spider man no way home.jpeg" alt="Spider Man :No Way Home">
+                         <p>Spider Man :No Way Home</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie31')">
+                         <img src="Marvel Studio/Movies/Spider man 4/Spider.Man.Into.The.Spider.Verse.jpeg" alt="Spider Man Into The Spider Verse">
+                         <p>Spider Man Into The Spider Verse</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie32')">
+                         <img src="Marvel Studio/Movies/Spider man 4/Spider.Man.across.The.Spider.Verse.jpeg" alt="Spider Man Across The Spider Verse">
+                         <p>Spider Man Across The Spider Verse</p>
+                    </div>
+                 </section><section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie33')">
+                         <img src="Marvel Studio/Movies/The Avengers/The Avengers 1.jpeg" alt="The Avengers 1">
+                         <p>The Avengers 1</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie34')">
+                         <img src="Marvel Studio/Movies/The Avengers/The Avengers 2.jpeg" alt="The Avengers 2">
+                         <p>The Avengers 2</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie35')">
+                         <img src="Marvel Studio/Movies/The Avengers/The Avengers 3.jpeg" alt="The Avengers 3">
+                         <p>The Avengers 3</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie36')">
+                         <img src="Marvel Studio/Movies/The Avengers/The Avengers 4.jpeg" alt="The Avengers 4">
+                         <p>The Avengers 4</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie37')">
+                         <img src="Marvel Studio/Movies/Thor/Thor 1.jpeg" alt="Thor 1">
+                         <p>Thor 1</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie38')">
+                         <img src="Marvel Studio/Movies/Thor/Thor 2.jpeg" alt="Thor 2">
+                         <p>Thor 2</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie39')">
+                         <img src="Marvel Studio/Movies/Thor/Thor 3.jpeg" alt="Thor 3">
+                         <p>Thor 3</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie40')">
+                         <img src="Marvel Studio/Movies/Thor.Love.and.Thunder/Thor 4.jpeg" alt="Thor 4">
+                         <p>Thor 4</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie41')">
+                         <img src="Marvel Studio/Movies/Venom/Venom 1.jpeg" alt="Venome 1">
+                         <p>Venom 1</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie42')">
+                         <img src="Marvel Studio/Movies/Venom/Venom 2.jpeg" alt="Venom 2">
+                         <p>Venom 2</p>
+                    </div>
+                 </section>
+                 <section class="part">
+                    <div class="movie-item" onclick="showMovieDetails('movie43')">
+                         <img src="" alt="">
+                         <p></p>
+                    </div>
+                 </section>
+            </div>
+            <div id="movie-details" style="display: none;">
+                <h2 id="movie-title"></h2>
+                <p id="movie-description"></p>
+                <video id="movie-video" width="600" controls>
+                    <source id="movie-video-source" src="" type="video/mp4">
+                </video>
+                <button onclick="goBack()">Back</button>
+            </div>
+        <script src="Marvel Movies.js"></script>
+    </section>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>My Cinema</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="series.css">
+    <link rel="icon" href="OIP.jpeg" alt="Website logo">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">My Cinema</a>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search Series">
+            <button onclick="searchSeries()">Search</button>
+            <button onclick="resetSearch()">Reset</button>
+        </div>
+    </header>
+    <section class="card">
+        <div class="container">
+            <h2 class="title">DC-Series</h2>
+            <div id="series-list">
+                <!-- Series Items -->
+                <section class="part">
+                    <div class="series-item" onclick="showSeriesDetails('series1')">
+                        <img src="DC/Series/Arrow/Arrow.jpeg" alt="Arrow">
+                        <p>Arrow</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="series-item" onclick="showSeriesDetails('series2')">
+                        <img src="DC/Series/Constantine/Constantine.jpeg" alt="Constantine">
+                        <p>Constantine</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="series-item" onclick="showSeriesDetails('series3')">
+                        <img src="DC/Series/Supergirl/Supergirl.jpeg" alt="Supergirl">
+                        <p>Supergirl</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="series-item" onclick="showSeriesDetails('series4')">
+                        <img src="DC/Series/Superman And Lois/superman and lois.jpeg" alt="Superman And Lois">
+                        <p>Superman And Lois</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="series-item" onclick="showSeriesDetails('series5')">
+                        <img src="DC/Series/Legend Of Tomorrow/Legends of tomorrow.jpeg" alt="Legends Of Tomorrow">
+                        <p>Legends Of Tomorrow</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="series-item" onclick="showSeriesDetails('series6')">
+                        <img src="DC/Series/The Flash/The Flash.jpeg" alt="The Flash">
+                        <p>The Flash</p>
+                    </div>
+                </section>
+                <section class="part">
+                    <div class="series-item" onclick="showSeriesDetails('series7')">
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                </section>
+                <!-- Add more series items here -->
+            </div>
+            <div id="seasons-list" style="display: none;">
+                <h2 id="series-title"></h2>
+                <p id="series-description"></p>
+                <ul id="season-list"></ul>
+                <button onclick="goBackToSeries()">Back</button>
+            </div>
+            <div id="episodes-list" style="display: none;">
+                <h2 id="season-title"></h2>
+                <ul id="episode-list"></ul>
+                <button onclick="goBackToSeasons()">Back</button>
+            </div>
+            <div id="series-details" style="display: none;">
+                <h2 id="episode-title"></h2>
+                <video id="series-video" width="600" controls>
+                    <source id="series-video-source" src="" type="video/mp4">
+                </video>
+                <button onclick="goBackToEpisodes()">Back</button>
+            </div>
+        </div>
+        <script src="DC Series.js"></script>
+    </section>
+</body>
+</html>
