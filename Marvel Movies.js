@@ -2,7 +2,7 @@ const movies = {
     movie1: {
         title: "Ant Man 1",
         description: "تدور الأحداث حول دكتور هانك بيم (مايكل دوجلاس) الذي يتم طرده من شركته بعد أن أزاحه تلميذه السابق (دارين كروس)، فيقوم (بيم) باستغلال مهارات سكوت لانج (بول رود) اللص المحترف الذي خرج لتوِّه من السجن، وعبر تدريبات (بيم)، وبواسطة رداء جديد يجعل صاحبه قادرًا على الانكماش في الحجم، ويمنحه قوة خارقة، والتحكم في جيش من النمل، يتحول (لانج) إلى الرجل النملة (Ant-Man). والآن على البطل صغير الحجم أن يستخدم مهاراته الجديدة ليمنع (كروس) المعروف باسم (يلو جاكيت) من التعامل مع التكنولوجيا نفسها، واستخدامها كسلاح لتنفيذ أغراض شريرة",
-        videoSrc: "Marvel Studio/Movies/Ant man/[EgyBest].Ant.Man.2015.BluRay.360p.x264.mp4"
+        videoSrc: "https://www.youtube.com/embed/HGbsi5YC3tU?si=Z2XTDgIvtBAcvLpI"
     },
     movie2: {
         title: "Ant Man 2",
@@ -157,7 +157,7 @@ const movies = {
     movie32: {
         title: "Spider Man Across The Spider Verse",
         description: "بعد مرور فترة طويلة، يتلقى مايلز موراليس زيارة جديدة من جوين ستيسي، ومعًا ينطلق الثنائي في مغامرة جديدة مليئة بالمخاطر والأعداء عبر عالم العنكبوت",
-        videoSrc: "Marvel Studio/Movies/Spider man 4/Spider.Man.Into.The.Spider.Verse/[EgyBest].Spider.Man.Into.The.Spider.Verse.2018.BluRay.720p.x264.mp4.MP4"
+        videoSrc: "https://odysee.com/$/embed/@Romany:3/Spider-Man.Across.the.Spider-Verse.2023:e?r=HAb9o7JWhwPUjvz2eYTMWiy6CU5jYGMp&signature=3118e29504305c12e9176d02ca205739c538093370a1a69d45b7ed79947780d4508bf98ad1d19367d65338200cc6143f9c44d6d0b29077fadec4c23b66c1445a&signature_ts=1718462751"
     },
     movie33: {
         title: "The Avengers 1",
@@ -220,20 +220,18 @@ function showMovieDetails(movieId) {
     const movie = movies[movieId];
     document.getElementById('movie-title').innerText = movie.title;
     document.getElementById('movie-description').innerText = movie.description;
-    const video = document.getElementById('movie-video');
-    const videoSource = document.getElementById('movie-video-source');
-    videoSource.src = movie.videoSrc;
-    video.load();  // Reload the video to apply the new source
 
-    // Show movie details and hide the movie list
+    const iframeSrc = movie.videoSrc;
+    document.getElementById('movie-website').setAttribute('src', iframeSrc);
+
     document.getElementById('movie-details').style.display = 'block';
     document.getElementById('movie-list').style.display = 'none';
 }
 
 function goBack() {
-    // Hide movie details and show the movie list
     document.getElementById('movie-details').style.display = 'none';
     document.getElementById('movie-list').style.display = 'flex';
+    document.getElementById('movie-website').setAttribute('src', '');  // Reset the video source
 }
 
 function searchMovies() {
