@@ -8,7 +8,7 @@ const seriesData = {
                 episodes: [
                     {
                         title: "Episode 1",
-                        videoSrc: "Marvel Studio/Series/Loki/Loki season1/[EgyBest].Loki.S01E01.WEB-DL.480p.x264.mp4"
+                        videoSrc: "https://archive.org/embed/egy-best.-loki.-s-01-e-01.-web-dl.-480p.x-264"
                     },
                     {
                         title: "Episode 2",
@@ -447,10 +447,8 @@ function showEpisodeDetails(seriesId, seasonIndex, episodeIndex) {
     const series = seriesData[seriesId];
     const episode = series.seasons[seasonIndex].episodes[episodeIndex];
     document.getElementById('episode-title').innerText = episode.title;
-    const video = document.getElementById('series-video');
-    const videoSource = document.getElementById('series-video-source');
-    videoSource.src = episode.videoSrc;
-    video.load();  // Reload the video to apply the new source
+    const iframeSrc = episode.videoSrc;
+    document.getElementById('Series-website').setAttribute('src', iframeSrc);
 
     // Show movie details and hide the episode list
     document.getElementById('series-details').style.display = 'block';
@@ -517,3 +515,4 @@ function resetSearch() {
 
     document.getElementById('searchInput').value = '';
 }
+
