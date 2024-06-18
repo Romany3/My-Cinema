@@ -152,7 +152,7 @@ const movies = {
     movie31: {
         title: "Spider Man Into The Spider Verse",
         description: "تتناول قصة الفيلم حياة المراهق (مايلز مورالز) داخل مدينة (بروكلين)، مستعرضًا الإمكانيات والقدرات اللامحدودة في عالم الرجل العنكبوت، حيث يمكن لأكثر من شخص أن يرتدي قناعًا ويفعل ما يحلو له، سواء على جانب الخير أو جانب الشر",
-        videoSrc: "Marvel Studio/Movies/Spider man 4/Spider.Man.Into.The.Spider.Verse/[EgyBest].Spider.Man.Into.The.Spider.Verse.2018.BluRay.720p.x264.mp4.MP4"
+        videoSrc: "https://odysee.com/$/embed/@MovieGasm:d/spider-man-across-the-spider-verse-final:9?r=HAb9o7JWhwPUjvz2eYTMWiy6CU5jYGMp"
     },
     movie32: {
         title: "Spider Man Across The Spider Verse",
