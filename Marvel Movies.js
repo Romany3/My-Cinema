@@ -2,7 +2,7 @@ const movies = {
     movie1: {
         title: "Ant Man 1",
         description: "تدور الأحداث حول دكتور هانك بيم (مايكل دوجلاس) الذي يتم طرده من شركته بعد أن أزاحه تلميذه السابق (دارين كروس)، فيقوم (بيم) باستغلال مهارات سكوت لانج (بول رود) اللص المحترف الذي خرج لتوِّه من السجن، وعبر تدريبات (بيم)، وبواسطة رداء جديد يجعل صاحبه قادرًا على الانكماش في الحجم، ويمنحه قوة خارقة، والتحكم في جيش من النمل، يتحول (لانج) إلى الرجل النملة (Ant-Man). والآن على البطل صغير الحجم أن يستخدم مهاراته الجديدة ليمنع (كروس) المعروف باسم (يلو جاكيت) من التعامل مع التكنولوجيا نفسها، واستخدامها كسلاح لتنفيذ أغراض شريرة",
-        videoSrc: "https://www.youtube.com/embed/HGbsi5YC3tU?si=Z2XTDgIvtBAcvLpI"
+        videoSrc: "https://www.youtube.com/embed/HGbsi5YC3tU?si=Z2XTDgIvtBAcvLpI?controls=0&disablekb=1&modestbranding=1&rel=0"
     },
     movie2: {
         title: "Ant Man 2",
@@ -140,14 +140,14 @@ const movies = {
         videoSrc: "Marvel Studio/Movies/Spider Man 3/[EgyBest].Spider.Man.Homecoming.2017.BluRay.360p.x264.mp4"
     },
     movie29: {
-        title: "",
+        title: "Spider Man :Far From Home",
         description: "يذهب (بيتر باركر) وأصدقاؤه في عطلة صيفية إلى أوروبا، حيث يجد بيتر نفسه في محاولة لإنقاذ أصدقائه من يد الشرير المعروف باسم (ميستيريو)",
         videoSrc: "Marvel Studio/Movies/Spider Man 3/[EgyBest].Spider.Man.Far.From.Home.2019.BluRay.360p.x264.mp4"
     },
     movie30: {
-        title: "",
+        title: "Spider Man :No Way Home",
         description: "بعد أن صار بيتر باركر متهمًا بقتل ماستريو ونشر الفوضى في المدينة، يلجأ الأخير إلى دكتور سترينج في محاولة لمحو ما حدث واستعادة سرية هويته، وخلال ذلك يجد باركر نفسه في مواجهة مع أعداء من عوالم آخرى",
-        videoSrc: "Marvel Studio/Movies/Spider Man 3/[EgyBest].Spider.Man.No.Way.Home.2021.BluRay.480p.x264.mp4"
+        videoSrc: "https://odysee.com/$/embed/@Romany:3/Spider.Man.No.Way.Home.2021:2?r=HAb9o7JWhwPUjvz2eYTMWiy6CU5jYGMp&signature=becf8e2ac8d4c61f02966802b63b8273b413d4459e24f13d7762212e8221302e5103202fbe6032cb7f9ce03386338b0dfc65cafa1bfef289ae87ab568acc8bc6&signature_ts=1718802660"
     },
     movie31: {
         title: "Spider Man Into The Spider Verse",
